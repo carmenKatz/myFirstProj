@@ -1,14 +1,33 @@
-#upLeftPic {
+* {
+    box-sizing: border-box;
+  }
+
+#uperSection {
+    width: 900px;
+    margin: 0;
+    width: 100%;
+}
+  #upLeftPic {
     float:left;
+    width: 33%;
+    
+}
+
+#upLeft, #upmidle, #upRight {
+    border: 2px black;
+    border-bottom-right-radius: 25px;
 }
 #upRightPic {
-    float:right;
+    
+    float:left;
+    width: 33%;
 }
-/*
+
 #upMidlePic {
-    text-align: center;
+    float:left;
+    width: 33%;
 }
-*/
+
 .clearfix::after {
     content: "";
     clear: both;
