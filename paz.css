@@ -1,31 +1,71 @@
 * {
     box-sizing: border-box;
   }
-
+  header {
+    height: 105px;
+    background: linear-gradient(to bottom, rgb(144,144,144) 90%, rgb(170, 170, 170));
+  }
 #uperSection {
     width: 900px;
-    margin: 0;
-    width: 100%;
+   margin: auto;
+    }
+#upLeft, #upmidle, #upRight {
+    
+    border-bottom-right-radius: 25px;
 }
+
   #upLeftPic {
     float:left;
     width: 33%;
     
 }
-
-#upLeft, #upmidle, #upRight {
-    border: 2px black;
-    border-bottom-right-radius: 25px;
+#upMidlePic {
+    float:left;
+    width: 33%;
 }
+
 #upRightPic {
     
     float:left;
     width: 33%;
 }
+#lowerSection {
+    width: 900px;
+   margin: auto;
+    }
+.lowerDis {
+   
+    background-image: url("cube_bg.png");
+    background-repeat: no-repeat;
+   
+    border-top-right-radius: 25px;
+    height: 180px;
+}
+#downLeftPic {
+    float:left;
+   
+   width: 33%;
+   
+}
 
-#upMidlePic {
+
+#downMidlePic {
+    float:left;
+   width: 33%;
+   
+}
+
+#downRightPic {
     float:left;
     width: 33%;
+   
+}
+footer {
+    /*display: inlineblock;*/
+    height: 55px;
+    background: rgb(144,144,144);
+    position: fixed;
+    /*margin-bottom: 0;*/
 }
 
 .clearfix::after {
@@ -33,3 +73,4 @@
     clear: both;
     display: table;
   }
+
