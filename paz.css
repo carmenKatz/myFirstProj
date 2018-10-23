@@ -1,3 +1,16 @@
 #upLeftPic {
-    background-image: url(upLeftpic.jpg);
+    float:left;
 }
+#upRightPic {
+    float:right;
+}
+/*
+#upMidlePic {
+    text-align: center;
+}
+*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
