@@ -7,15 +7,31 @@
     position: relative;
    
 }
+.plist {
+    position: relative;
+}
+.plist > .dlist {
+    background-color: rgb(68, 66, 66);
+  width: 50px;
+  padding: 20px 10px;
+  display: none;
+  position: absolute;
+}
+.plist:hover > .dlist {
+    display: block;
+  }
+
 .uperMenuS {
 
-bottom: 10px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
 }
 .uperMenu {
    
-   
-    font-size: 17px;
-    padding: 10px;
+  
+    font-size: 12px;
+    padding: 5px;
     text-decoration: none;
     color: white;
 }
@@ -45,17 +61,15 @@ bottom: 10px;
   #upLeftPic {
     float:left;
     width: 33%;
-    
-    
-}
+        }
+
 #upMidlePic {
     float:left;
     width: 33%;
 }
 
 #upRightPic {
-    
-    float:left;
+     float:left;
     width: 33%;
 }
 #lowerSection {
@@ -68,29 +82,29 @@ bottom: 10px;
    
     background-image: url("cube_bg.png");
     background-repeat: no-repeat;
-   
+     position: relative;
     border-top-right-radius: 25px;
     height: 180px;
+    object-fit: cover;
 }
+
 #downLeftPic {
     float:left;
-   
-   width: 33%;
-   
-}
+    width: 33%;
+   }
 
 
 #downMidlePic {
-    float:left;
-   width: 33%;
-   
+    float: left;
+    width: 33%;
 }
 
 #downRightPic {
-    float:left;
+    float: left;
     width: 33%;
    
 }
+
 footer {
     display: inline-block;
     height: 50px;
@@ -100,10 +114,31 @@ footer {
   /*  font-size: 15px;*/
     text-align: center;
     width: 100%;
-       
+    position: relative
+       }
+#downLeft {
+    
+    height: 155;
+    width: 60;
+padding-left: 5px;
+padding-bottom: 25px;
 }
+#downMidle {
+    width: 220px;
+    height: 89px;
+    margin-top: 15px;
+    margin-left: 30px;
+  
+}
+#downRight {
+    width: 220px;
+    height: 89px;
+    margin-top: 15px;
+    margin-left: 30px;
+ }
+
 a {
-    padding: 10px;
+    padding: 5px;
     margin-right: 15px;
     margin-top: auto;
     margin-bottom: auto;
@@ -111,6 +146,28 @@ a {
     font-size: 12px; 
     color: white;
     text-decoration: none;
+}
+#sep {
+    padding:5px;
+}
+h4 {
+    font-family:Tahoma, Verdana, sans-serif, bold;
+    font-size: 12px; 
+    padding: 10px;
+    text-align: right;
+    margin: 0 20 0 ;
+    letter-spacing: -1;
+}
+.sep {
+    font-family:Tahoma, Verdana, sans-serif, bold;
+    font-size: 12px; 
+    padding: 4px;
+}
+#links {
+    position: absolute;
+   
+    left: 5px;
+    bottom: 5px;
 }
 
 a:hover {
@@ -120,7 +177,10 @@ span {
     border-right-color: white;
 }
 #fb {
-    size: 20px 20px;
+    size: 15px 15px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }
 
 .clearfix::after {
