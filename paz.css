@@ -1,5 +1,12 @@
 * {
     box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+    
+  }
+  main {
+      width: 900;
+      text-align: center;
   }
   header {
     height: 105px;
@@ -7,31 +14,40 @@
     position: relative;
    
 }
-.plist {
-    position: relative;
-}
-.plist > .dlist {
-    background-color: rgb(68, 66, 66);
-  width: 50px;
-  padding: 20px 10px;
-  display: none;
-  position: absolute;
-}
-.plist:hover > .dlist {
-    display: block;
-  }
+
 
 .uperMenuS {
-
+    width: 900px;
     position: absolute;
     left: 5px;
     bottom: 5px;
+    text-align: center;
 }
-.uperMenu {
+.dlist {
+    display: none;
+    position: absolute;
+    top: 8px;
    
+    background: rgb(170, 170, 170);
+    width: 100px;
+    list-style-type: none;
+    z-index: 1;
+}
+/*a.uperMenu {bottom: 0;}*/
+.uperMenu:hover .dlist {
+    display: block;
+}
+.dlist:hover li{
+    display: block;   
+}
+.uperMenu .dlist li:hover .dlist {
+    display: block;
+  }
+.uperMenu {
+    position: relative;
+    display: inline-block;
+     font-size: 13px;
   
-    font-size: 12px;
-    padding: 5px;
     text-decoration: none;
     color: white;
 }
@@ -40,41 +56,96 @@
       top: 32px;
       right: 50px;
   }
+  li {
+      color: white;
+      padding: 4px;
+      size: 13px;
+  }
 
   #spacer {
-    /*width: 900px;*/
+   
     height: 25px;
     background-color: white;
   }
 #uperSection {
-   /* position: absolute;
-    top: 150px;*/
+    font-family: Arial, Helvetica, sans-serif;    
     width: 900px;
    margin: auto;
-   
+   color: white;
+   font-size: 12px;
     }
 #upLeft, #upmidle, #upRight {
     
     border-bottom-right-radius: 25px;
+    z-index: -1;
 }
 
   #upLeftPic {
     float:left;
     width: 33%;
+    position: relative;
         }
 
 #upMidlePic {
     float:left;
     width: 33%;
+    position: relative;
 }
-
 #upRightPic {
-     float:left;
-    width: 33%;
+    float:left;
+   width: 33%;
+   position: relative;
 }
+    
+    #upLeftPic > div {
+    position: absolute;
+    border-bottom-right-radius: 25px;
+    bottom: 25px;
+    right: 20px;
+    left: 24px;
+    background: rgb(126, 122, 122);
+    opacity: 0.8;
+    width: 220px;
+    height: 150px;
+    text-align: right;
+   }
+   #upMidlePic > div {
+    position: absolute;
+    border-bottom-right-radius: 25px;
+    bottom: 25px;
+    right: 20px;
+    left: 24px;
+    background: rgb(126, 122, 122);
+    opacity: 0.8;
+    width: 220px;
+    height: 150px;
+    text-align: right;
+    
+   }
+   #upRightPic > div {
+    position: absolute;
+    border-bottom-right-radius: 25px;
+    bottom: 25px;
+    right: 20px;
+    left: 24px;
+    background: rgb(126, 122, 122);
+    opacity: 0.8;
+    width: 220px;
+    height: 150px;
+    text-align: right;
+   }
+   h4 {
+    font-family:Tahoma, Verdana, sans-serif, bold;
+    font-size: 12px; 
+    padding: 10px;
+    text-align: right;
+    margin: 0 20  ;
+    
+} 
+
+
 #lowerSection {
-  /* position: absolute;
-    top: 450px;*/
+  
     width: 900px;
    margin: auto;
     }
@@ -111,18 +182,19 @@ footer {
     color: white;
     background: rgb(144,144,144);
     position: fixed;
-  /*  font-size: 15px;*/
+    
     text-align: center;
     width: 100%;
     position: relative
        }
 #downLeft {
     
-    height: 155;
-    width: 60;
+    
 padding-left: 5px;
 padding-bottom: 25px;
+
 }
+
 #downMidle {
     width: 220px;
     height: 89px;
@@ -136,10 +208,14 @@ padding-bottom: 25px;
     margin-top: 15px;
     margin-left: 30px;
  }
-
+.downSecLink {
+    color: black;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
 a {
-    padding: 5px;
-    margin-right: 15px;
+    
+   /* margin-right: 15px;*/
     margin-top: auto;
     margin-bottom: auto;
     font-family: Arial, Helvetica, sans-serif; 
@@ -150,37 +226,31 @@ a {
 #sep {
     padding:5px;
 }
-h4 {
-    font-family:Tahoma, Verdana, sans-serif, bold;
-    font-size: 12px; 
-    padding: 10px;
-    text-align: right;
-    margin: 0 20 0 ;
-    letter-spacing: -1;
-}
+
 .sep {
     font-family:Tahoma, Verdana, sans-serif, bold;
     font-size: 12px; 
-    padding: 4px;
+    padding: 2px;
+    color: white;
 }
 #links {
     position: absolute;
+   text-align: center;
    
-    left: 5px;
-    bottom: 5px;
+    bottom: 10px;
+    width: 900px;
 }
 
 a:hover {
     color: blue;
 }
-span {
-    border-right-color: white;
-}
+
 #fb {
-    size: 15px 15px;
+   
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    right: 2px;
+    bottom: 2px;
+   padding-left: 5px;
 }
 
 .clearfix::after {
