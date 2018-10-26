@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     direction: rtl;
-    text-align: right;
+   text-align: right;
     
   }
   main {
@@ -14,55 +14,92 @@
     position: relative;
    
 }
-
-
+ /*article {
+    
+    width: 900px;
+    text-align: center;
+ }
+*/
 .uperMenuS {
     width: 900px;
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
+    height: 15.2px;
+   position: absolute;
+    top: 85px;
     text-align: center;
+    /*display: inline-block;*/
 }
-.dlist {
-    display: none;
-    position: absolute;
-    top: 8px;
-   
-    background: rgb(170, 170, 170);
-    width: 100px;
-    list-style-type: none;
-    z-index: 1;
-}
-/*a.uperMenu {bottom: 0;}*/
-.uperMenu:hover .dlist {
-    display: block;
-}
-.dlist:hover li{
-    display: block;   
-}
-.uperMenu .dlist li:hover .dlist {
-    display: block;
-  }
-.uperMenu {
+.uperMenu1, .uperMenu2, .uperMenu3, .uperMenu4, 
+.uperMenu5, .uperMenu6, .uperMenu7 {
     position: relative;
     display: inline-block;
-     font-size: 13px;
-  
-    text-decoration: none;
+    }
+
+.menu1, .menu2, .menu3, .menu4, .menu5,
+.menu6, .menu7 {
+    font-size: 12px;
+    padding: 8px;
     color: white;
+    text-decoration: none;
+    border: none;
 }
+
+
+
+ .dlist1,  .dlist2, .dlist3, .dlist4
+ .dlist5, .dlist6, .dlist7 {
+     display: none;
+    position: absolute;
+    width: 100px;
+    /*size: 15px;*/
+        z-index: 1;
+ }
+ .dlist1 a, .dlist2 a, .dlist3 a, .dlist4 a,
+ .dlist5 a, .dlist6 a, .dlist7 a  {
+    color: white;
+    background-color: rgb(170, 170, 170);
+    size: 13px;
+    display: block;
+     }     
+/*.dlist2 a {
+    color: white;
+    background-color: rgb(170, 170, 170);
+     size: 13px;
+    display: block;
+ }   */
+
+ .dlist1 a:hover { background: rgb(192, 192, 192);}
+ .dlist2 a:hover { background: rgb(192, 192, 192);}
+.dlist3 a:hover { background: rgb(192, 192, 192);}
+ .dlist4 a:hover { background: rgb(192, 192, 192);}
+ .dlist5 a:hover { background: rgb(192, 192, 192);}
+ .dlist6 a:hover { background: rgb(192, 192, 192);}
+ .dlist7 a:hover { background: rgb(192, 192, 192);}
+ 
+
+ .uperMenu1:hover .dlist1  { display: block; }
+ .uperMenu2:hover .dlist2  { display: block; }
+ .uperMenu3:hover .dlist3  { display: block; }
+ .uperMenu4:hover .dlist4  { display: block; }
+ .uperMenu5:hover .dlist5  { display: block; }
+ .uperMenu6:hover .dlist6  { display: block; }
+ .uperMenu7:hover .dlist7  { display: block; }
+
+
+.uperMenu1:hover .menu1 { color:blue; }
+.uperMenu2:hover .menu2 { color:blue; }
+.uperMenu3:hover .menu3 { color:blue; }   
+.uperMenu4:hover .menu4 { color:blue; }    
+.uperMenu5:hover .menu5 { color:blue; }    
+.uperMenu6:hover .menu6 { color:blue; }    
+.uperMenu7:hover .menu7 { color:blue; }    
+     
   #paz {
       position: absolute;
       top: 32px;
       right: 50px;
   }
-  li {
-      color: white;
-      padding: 4px;
-      size: 13px;
-  }
-
-  #spacer {
+  
+  .spacer {
    
     height: 25px;
     background-color: white;
@@ -249,7 +286,7 @@ a:hover {
    
     position: absolute;
     right: 2px;
-    bottom: 2px;
+    bottom: 10px;
    padding-left: 5px;
 }
 
