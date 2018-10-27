@@ -128,11 +128,11 @@ form {
 input {
     position: absolute;
    left: 70px;
-    padding: 5px;
+    padding: 7px;
 }
 label {
     float: right;
-   
+  
 }
  article {
      position: relative;
@@ -184,9 +184,12 @@ label {
     top: 5px; }
 #con-text {
     position: absolute;
-    
+    right: 5px;
   /* size: 5px;*/
     top: 50px; 
+}
+#con-text.p {
+    line-height: 1;
 }
 
 footer {
