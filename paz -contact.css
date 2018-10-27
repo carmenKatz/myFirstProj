@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+   text-align: right;
+    
+  }
+  main {
+      width: 900;
+      text-align: center;
+      height: ;
+  }
+  header {
+    height: 105px;
+    background: linear-gradient(to bottom, rgb(144,144,144) 90%, rgb(170, 170, 170));
+    position: relative;
+   
+}
+ /*article {
+    
+    width: 900px;
+    text-align: center;
+ }
+*/
+.uperMenuS {
+    width: 900px;
+    height: 15.2px;
+   position: absolute;
+    top: 85px;
+    text-align: center;
+    /*display: inline-block;*/
+}
+.uperMenu1, .uperMenu2, .uperMenu3, .uperMenu4, 
+.uperMenu5, .uperMenu6, .uperMenu7 {
+    position: relative;
+    display: inline-block;
+    }
+
+.menu1, .menu2, .menu3, .menu4, .menu5,
+.menu6, .menu7 {
+    font-size: 16px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+
+
+ .dlist1,  .dlist2, .dlist3, .dlist4
+ .dlist5, .dlist6, .dlist7 {
+     display: none;
+    position: absolute;
+    width: 100px;
+    /*size: 15px;*/
+        z-index: 1;
+ }
+ .dlist1 a, .dlist2 a, .dlist3 a, .dlist4 a,
+ .dlist5 a, .dlist6 a, .dlist7 a  {
+    color: white;
+    background-color: rgb(170, 170, 170);
+    size: 13px;
+    display: block;
+     }     
+/*.dlist2 a {
+    color: white;
+    background-color: rgb(170, 170, 170);
+     size: 13px;
+    display: block;
+ }   */
+
+ .dlist1 a:hover { background: rgb(192, 192, 192);}
+ .dlist2 a:hover { background: rgb(192, 192, 192);}
+.dlist3 a:hover { background: rgb(192, 192, 192);}
+ .dlist4 a:hover { background: rgb(192, 192, 192);}
+ .dlist5 a:hover { background: rgb(192, 192, 192);}
+ .dlist6 a:hover { background: rgb(192, 192, 192);}
+ .dlist7 a:hover { background: rgb(192, 192, 192);}
+ 
+
+ .uperMenu1:hover .dlist1  { display: block; }
+ .uperMenu2:hover .dlist2  { display: block; }
+ .uperMenu3:hover .dlist3  { display: block; }
+ .uperMenu4:hover .dlist4  { display: block; }
+ .uperMenu5:hover .dlist5  { display: block; }
+ .uperMenu6:hover .dlist6  { display: block; }
+ .uperMenu7:hover .dlist7  { display: block; }
+
+
+.uperMenu1:hover .menu1 { color:blue; }
+.uperMenu2:hover .menu2 { color:blue; }
+.uperMenu3:hover .menu3 { color:blue; }   
+.uperMenu4:hover .menu4 { color:blue; }    
+.uperMenu5:hover .menu5 { color:blue; }    
+.uperMenu6:hover .menu6 { color:blue; }    
+.uperMenu7:hover .menu7 { color:blue; }    
+     
+  #paz {
+      position: absolute;
+      top: 40px;
+      right: 50px;
+  }
+  
+  .spacer {
+   
+    height: 25px;
+    background-color: white;
+  }
+
+    
+    
+  
+ .captext {
+       size: 20px;
+    color: #0a688b;
+    font-family:Tahoma, Verdana, sans-serif, bold;
+    padding: 10px;
+    margin: 0 20  ;
+    
+} 
+form {
+    
+    position: absolute;
+    width: 370px;
+    bottom: 50px;
+    right: 70px;
+
+}
+input {
+    position: absolute;
+   left: 70px;
+    padding: 5px;
+}
+label {
+    float: right;
+   
+}
+ article {
+     position: relative;
+     width: 900px;
+ }
+.lSec {
+    position: absolute;
+   /* float: left;*/
+  left: 0px;
+  /* height: 361px;*/
+  top: 50px;
+  text-align: right;
+}
+.left {
+    width: 291px;
+}
+.captext { 
+    top:100px;
+    margin: 0;
+}
+#leftDown { 
+    
+    bottom: 0; 
+}
+#leftDown, #leftUp { 
+    z-index: -1;
+}
+
+.rSec {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 70px;
+}
+
+#rightside {
+    right: 20px;
+    z-index: -1;
+}
+
+#capleftU {
+    position: absolute;
+    top: 5px; }
+#capleftD {
+    position: absolute;
+    top: 205px; }
+#capright {
+    position: absolute;
+    top: 5px; }
+#con-text {
+    position: absolute;
+    
+  /* size: 5px;*/
+    top: 50px; 
+}
+
+footer {
+    display: inline-block;
+     height: 50px;
+     color: white;
+     background: rgb(144,144,144);
+     position: fixed;
+     bottom: 0;
+     text-align: center;
+     width: 100%;
+    
+        }
+a {
+          margin-top: auto;
+    margin-bottom: auto;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 12px; 
+    color: white;
+    text-decoration: none;
+}
+#sep {
+    padding:5px;
+}
+
+.sep {
+    font-family:Tahoma, Verdana, sans-serif, bold;
+    font-size: 12px; 
+    padding: 2px;
+    color: white;
+}
+.links {
+    position: absolute;
+    display: block;
+   right: 100px;
+    bottom: 5px;
+    width: 900px;
+    z-index: 1;
+}
+
+
+/*#fb {
+   
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+   padding-left: 15px;
+}*/
+#red{
+    color:red;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
